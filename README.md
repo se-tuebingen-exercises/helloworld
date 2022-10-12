@@ -48,8 +48,15 @@ You should see something similar to the following output:
 sbt:helloworld> run
 [info] compiling 1 Scala source to /private/tmp/helloworld/target/scala-3.2.0/classes ...
 [info] running sayHello
-Hello World
-[success] Total time: 1 s, completed 12 Oct 2022, 17:42:41
+Hey, what's your name? (please press <Enter> after entering your name)
+Jonathan
+Hello there, Jonathan!
+
+Seems like you have all dependencies set up correctly.
+Apparently, this application is running on Mac OS X with JDK 19.
+
+[success] Total time: 2 s, completed 12 Oct 2022, 17:59:26
 sbt:helloworld>
 ```
-The application simply printed `Hello World` and then exited. sbt is now ready to take the next command.
+The application will ask you for your name and then print back a simple greeting.
+After exiting, sbt is now ready to take the next command.
