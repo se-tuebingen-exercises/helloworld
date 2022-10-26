@@ -2,7 +2,7 @@ import scala.io.StdIn.readLine
 
 @main
 def sayhello = {
-  println("Hey, what's your name? (please press <Enter> after entering your name)")
+  println("Hey, what's your name? (please press <ENTER> after entering your name)")
 
   val name = readLine()
 
