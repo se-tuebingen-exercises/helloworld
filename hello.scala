@@ -16,10 +16,7 @@ def sayhello = {
 
   val name = readLine()
 
-  val greeting =
-    s"""Hello there, ${name}.
-      |
-      |Seems like you have all dependencies set up correctly, great.
+  val greeting = s"Hello there, ${name}."
   println(greeting)
 
   if (name != osUserName) {
