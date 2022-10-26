@@ -5,9 +5,14 @@ trait Messages {
   def greeting(os: String, jdk: String): String
 }
 
+object EN extends Messages {
+  val welcome = "Hey, what's your name? (please press <ENTER> after entering your name)"
+  def greeting(os: String, jdk: String) = ???
+}
+
 @main
 def sayhello = {
-  println("Hey, what's your name? (please press <ENTER> after entering your name)")
+  println(EN.welcome)
 
   val name = readLine()
 
