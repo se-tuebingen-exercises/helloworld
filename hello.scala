@@ -6,7 +6,7 @@ trait Messages {
 }
 
 object EN extends Messages {
-  val welcome = "Hey, what's your name? (please press <ENTER> after entering your name)"
+  val welcome = "Hey, what's your name?! (please press <ENTER> after entering your name)"
   def greeting(os: String, jdk: String) = ???
 }
 
