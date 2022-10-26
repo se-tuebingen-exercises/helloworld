@@ -1,8 +1,18 @@
 import scala.io.StdIn.readLine
 
+trait Messages {
+  val welcome: String
+  def greeting(os: String, jdk: String): String
+}
+
+object EN extends Messages {
+  val welcome = "Hey, what's your name?! (please press <ENTER> after entering your name)"
+  def greeting(os: String, jdk: String) = ???
+}
+
 @main
 def sayhello = {
-  println("Hey, what's your name? (please press <ENTER> after entering your name)")
+  println(EN.welcome)
 
   val name = readLine()
 
